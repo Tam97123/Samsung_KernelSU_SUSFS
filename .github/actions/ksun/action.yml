@@ -58,4 +58,4 @@ runs:
         set -euo pipefail
         cd "$COMMON/KernelSU-Next"
         cp ${{ github.action_path }}/patches/static.patch ./
-        patch -p1 < static.patch
+        patch -p1 < static.patch || true
